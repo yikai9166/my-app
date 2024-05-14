@@ -1,22 +1,15 @@
-import logo from './logo.svg';
+import MySlider from './MySlider';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          congratulations
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Hello React!!!</h1>
+        <h2>第1個元件</h2>
+        <MySlider color = "RED"/>
+        <MySlider color = "GREEN"/>
+        <MySlider color = "BLUE"/>
       </header>
     </div>
   );
