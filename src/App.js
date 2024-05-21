@@ -1,15 +1,16 @@
-import MySlider from './MySlider';
 import './App.css';
+import MyRGBPanel from './components/MyRGBPanel';
+import MyCalculator from './components/MyCalculator';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello React!!!</h1>
-        <h2>第1個元件</h2>
-        <MySlider color = "RED"/>
-        <MySlider color = "GREEN"/>
-        <MySlider color = "BLUE"/>
+        <h1>Hello React !!! 4B0G0112鄭凱翊</h1>
+        <h2>RGBPanel</h2>
+        <MyRGBPanel />
+        <h2>Calculator</h2>
+        <MyCalculator />
       </header>
     </div>
   );
