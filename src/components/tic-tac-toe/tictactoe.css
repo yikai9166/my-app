@@ -1,5 +1,27 @@
 .square{
     background-color: white;
     width: 50px;
-    
+    height: 50px;
+    border: 1px solid rgb(228, 122, 122);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.board-row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.game{
+    width: 400px;
+    background: rgb(230, 130, 216);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    border: 3px solid rgb(235, 38, 241);
+    border-radius: 20px;
+    padding: 20px;
 }
