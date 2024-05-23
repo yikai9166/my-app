@@ -1,7 +1,8 @@
 import './App.css';
+import React from 'react';
 import MyRGBPanel from './components/RGBPanel/MyRGBPanel';
 import MyCalculator from './components/calculator/MyCalculator';
-import Board from './components/tic-tac-toe/Board';
+import TicTacToe from './components/tic-tac-toe/tictactoe';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <h2>Calculator</h2>
         <MyCalculator />
         <h2>Tic-Tac-Toe Game</h2>
-        <Square />
+        <TicTacToe />
         
       </header>
     </div>

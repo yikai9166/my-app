@@ -3,13 +3,12 @@ import Square from "./Square";
 import './tictactoe.css'
 
 function Board({squares}){
-    const handleClick = (i) =>{
-
+    const handleClick = () =>{
+    
     }
 
     return(
     <>
-    <div className="status">{status}</div>
     <div className="board-row">
         <square value={squares[0]} onSquareClick={()=>handleClick(0)}/>
         <square value={squares[1]} onSquareClick={()=>handleClick(1)}/>

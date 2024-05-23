@@ -7,11 +7,11 @@ function TicTacToe(){
     const xIsNext = currentMove % 2 ===0;
     const currentSquares = history[currentMove];
 
-    
+
     return(
         <div className='game'>
-            <div className='game-board'>
-                <Board squares={currentSquares} />
+            <div className=' game-board'>
+            <Board squares={currentSquares} />
             </div>
             <div className='game-info'>
                 <h4>遊戲歷程</h4>
