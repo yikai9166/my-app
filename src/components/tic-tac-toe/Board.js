@@ -2,8 +2,16 @@ import React from "react";
 import Square from "./Square";
 import "./tictactoe.css";
 
-function Board({squares}){
-    const handleClick = (i) => {alert ('Squar ${i} clicked.')};
+function Board({xIsNext, squares, onPlay}) {
+    const handleClick = (i) => {
+        const nextSquare = squares.slice();
+        if(xIsNext){
+            nextSquare[i] = "x";
+        }else {
+            nextSquare[i] = "o";
+        }
+        onPlay(nextSquare);
+    };
     let status = "目前狀態";
 
     return(
