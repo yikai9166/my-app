@@ -19,7 +19,6 @@
 }
 
 .game {
-    height: 500px;
     width: 400px;
     background-color: lightblue;
     display: flex;
@@ -35,8 +34,6 @@
     border: 1px solid sandybrown;
     background-color: bisque;
     border-radius: 10px;
-    height: 300px;
-    width: 200px;
     padding: 10px;
 }
 

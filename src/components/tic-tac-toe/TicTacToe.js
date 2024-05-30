@@ -11,7 +11,7 @@ function TicTacToe(){
     return(
         <div className='game'>
             <div className=' game-board'>
-            <Board squares={currentSquares} />
+                <Board squares={currentSquares} />
             </div>
             <div className='game-info'>
                 <h4>遊戲歷程</h4>

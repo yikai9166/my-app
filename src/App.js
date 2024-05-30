@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import MyRGBPanel from './components/RGBPanel/MyRGBPanel';
 import MyCalculator from './components/calculator/MyCalculator';
-import TicTacToe from './components/tic-tac-toe/tictactoe';
+import TicTacToe from './components/tic-tac-toe/TicTacToe';
 
 function App() {
   return (
