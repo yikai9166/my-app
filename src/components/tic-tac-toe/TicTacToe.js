@@ -13,6 +13,23 @@ function TicTacToe(){
         setCurrentMove(nextHistory.length -1);
     }
 
+    
+    const moves = history.map((squares, move) => {
+        const jumpTo = (nextMove) => setCurrentMove(nextMove);
+        let description;
+        if(move > 0){
+            description = "回到第" + move +"步";
+        }
+        else{
+            description = "遊戲開始";
+        }
+        return <>
+            <li key = {move} >
+                <button onClick={()=>jumpTo(move)}>{description}</button>
+            </li>
+         </>;
+
+    });
 
     return(
         <div className='game'>
@@ -21,9 +38,9 @@ function TicTacToe(){
             </div>
             <div className='game-info'>
                 <h4>遊戲歷程</h4>
+                <ol>{moves}</ol>
             </div>
         </div>
-
     );
 
 }

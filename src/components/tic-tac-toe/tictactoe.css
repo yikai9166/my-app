@@ -24,7 +24,7 @@
 }
 
 .game {
-    width: 400px;
+    width: 500px;
     background-color: lightblue;
     display: flex;
     flex-direction: row;
